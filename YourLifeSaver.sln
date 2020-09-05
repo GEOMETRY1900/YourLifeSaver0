@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourLifeSaver", "YourLifeSaver\YourLifeSaver.csproj", "{6DE5CDEA-9998-4D68-BF17-D8D008E0057D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourLifeSaver.Tests", "YourLifeSaver.Tests\YourLifeSaver.Tests.csproj", "{4AD598D5-7BBB-4B93-A6ED-676E1C9A9D7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DE5CDEA-9998-4D68-BF17-D8D008E0057D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE5CDEA-9998-4D68-BF17-D8D008E0057D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE5CDEA-9998-4D68-BF17-D8D008E0057D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE5CDEA-9998-4D68-BF17-D8D008E0057D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AD598D5-7BBB-4B93-A6ED-676E1C9A9D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AD598D5-7BBB-4B93-A6ED-676E1C9A9D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AD598D5-7BBB-4B93-A6ED-676E1C9A9D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AD598D5-7BBB-4B93-A6ED-676E1C9A9D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA6D196D-DDCA-4CD0-A01B-2DE200D9A625}
+	EndGlobalSection
+EndGlobal
