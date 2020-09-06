@@ -288,6 +288,7 @@
     <Content Include="assets\pdf\subpage1.pdf" />
     <Content Include="assets\pdf\subpage2.pdf" />
     <Content Include="assets\pdf\subpage3.pdf" />
+    <None Include="Properties\PublishProfiles\YourLifeSaver20200906211832 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
