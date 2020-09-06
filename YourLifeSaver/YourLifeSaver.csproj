@@ -194,6 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\img\Logo.png" />
     <Content Include="assets\img\services-4.jpg" />
     <Content Include="assets\img\services-1.jpg" />
     <Content Include="assets\img\services-2.jpg" />
@@ -215,7 +216,6 @@
     <Content Include="assets\img\features-4.svg" />
     <Content Include="assets\img\footer-bg.jpg" />
     <Content Include="assets\img\hero-img.png" />
-    <Content Include="assets\img\Logo.png" />
     <Content Include="assets\img\portfolio\portfolio-1.jpg" />
     <Content Include="assets\img\portfolio\portfolio-2.jpg" />
     <Content Include="assets\img\portfolio\portfolio-3.jpg" />
@@ -284,7 +284,7 @@
     <Content Include="assets\vendor\icofont\fonts\icofont.woff" />
     <Content Include="assets\vendor\icofont\fonts\icofont.woff2" />
     <Content Include="assets\vendor\jquery\jquery.min.map" />
-    <Content Include="assets\pdf\subpage 4.pdf" />
+    <Content Include="assets\pdf\subpage4.pdf" />
     <Content Include="assets\pdf\subpage1.pdf" />
     <Content Include="assets\pdf\subpage2.pdf" />
     <Content Include="assets\pdf\subpage3.pdf" />
