@@ -197,9 +197,9 @@
     <Content Include="assets\img\next.png" />
     <Content Include="assets\img\background.jpg" />
     <Content Include="assets\img\Logo.png" />
-    <Content Include="assets\img\services-4.jpg" />
-    <Content Include="assets\img\services-1.jpg" />
     <Content Include="assets\img\services-2.jpg" />
+    <Content Include="assets\img\services-1.jpg" />
+    <Content Include="assets\img\services-3.jpg" />
     <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\clients\client-1.png" />
@@ -226,7 +226,7 @@
     <Content Include="assets\img\portfolio\portfolio-7.jpg" />
     <Content Include="assets\img\portfolio\portfolio-8.jpg" />
     <Content Include="assets\img\portfolio\portfolio-9.jpg" />
-    <Content Include="assets\img\services-3.jpg" />
+    <Content Include="assets\img\services-4.jpg" />
     <Content Include="assets\img\team\team-1.jpg" />
     <Content Include="assets\img\team\team-2.jpg" />
     <Content Include="assets\img\team\team-3.jpg" />
