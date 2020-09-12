@@ -1,19 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript">
-        loopy()
-        function loopy() {
-            var sWord = ""
-            while (sWord != "40") {
-                sWord = prompt("Please input correct password")
-            }
-            alert("Wellcome")
-        }
-    </script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -46,6 +33,24 @@
     <!-- Template Main CSS File -->
     <link href="~/assets/css/style.css" rel="stylesheet">
 
+    <script language="JavaScript">
+        var password;
+        var pass1 = "123";
+
+        if (!localStorage.getItem('mycat')) {
+
+            do {
+                password = prompt('Please enter your password to view this page!', '');
+                if (password == pass1) {
+                    window.location = '#';
+                    localStorage.setItem('mycat', 'mydog');
+                } else {
+                    password = prompt('Wrong password, please the correct password', '');
+                }
+            } while (password != pass1);
+        }
+    </script>
+
     <!-- =======================================================
     * Template Name: Bocor - v2.0.0
     * Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
@@ -66,7 +71,7 @@
             <div class="logo mr-auto">
                 @*<h1 class="text-light"><a href="~/Views/Home/Index.cshtml">Bocor<span>.</span></a></h1>*@
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="#header"><img src="~/assets/img/Logo.png" alt="" class="img-fluid"></a>
+                <a href="#intro"><img src="~/assets/img/Logo.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
