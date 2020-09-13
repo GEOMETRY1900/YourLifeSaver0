@@ -9,21 +9,62 @@
 # General
 --------------------------------------------------------------*/
 body {
+  background: #fff;
+  color: #666666;
   font-family: "Open Sans", sans-serif;
-  color: #444444;
 }
 
 a {
-  color: #fdc134;
+  color: #18d26e;
+  transition: 0.5s;
 }
 
-a:hover {
-  color: #fdd067;
+a:hover, a:active, a:focus {
+  color: #18d36e;
+  outline: none;
   text-decoration: none;
 }
 
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #18d26e;
+  color: #fff;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -101,12 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     #intro .carousel-content {
         text-align: center;
     }
-
-    #intro h2 {
-        color: #fff;
-        margin-bottom: 30px;
-        font-size: 48px;
-        font-weight: 700;
+    1;
     }
 
 @media (max-width: 768px) {
@@ -200,12 +236,20 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+    /*height: 80px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background: #213b52;
+  background: #213b52;*/
+    padding: 30px 0;
+    height: 92px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
 }
 
 #header .logo h1 {
@@ -1418,3 +1462,5 @@ section {
     text-align: ceneter;
   }
 }
+
+

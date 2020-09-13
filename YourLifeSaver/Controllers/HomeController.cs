@@ -26,5 +26,15 @@ namespace YourLifeSaver.Controllers
 
             return View();
         }
+
+        public ActionResult KnowViolence()
+        {
+            return View();
+        }
+
+        public ActionResult DataVirtualization()
+        {
+            return View();
+        }
     }
 }
