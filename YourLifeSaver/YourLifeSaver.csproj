@@ -394,6 +394,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\DataVirtualization.cshtml" />
+    <Content Include="Views\Home\Information1.cshtml" />
+    <Content Include="Views\Home\Information2.cshtml" />
+    <Content Include="Views\Home\Information3.cshtml" />
+    <Content Include="Views\Home\Information4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

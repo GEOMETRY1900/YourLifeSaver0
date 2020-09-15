@@ -26,5 +26,30 @@ namespace YourLifeSaver.Controllers
 
             return View();
         }
+
+        public ActionResult Information1()
+        {
+            return View();
+        }
+
+        public ActionResult Information2()
+        {
+            return View();
+        }
+
+        public ActionResult Information3()
+        {
+            return View();
+        }
+
+        public ActionResult Information4()
+        {
+            return View();
+        }
+
+        public ActionResult DataVirtualization()
+        {
+            return View();
+        }
     }
 }
