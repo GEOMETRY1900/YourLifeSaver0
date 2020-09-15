@@ -12,7 +12,7 @@ namespace YourLifeSaver.Controllers
 {
     public class quizsController : Controller
     {
-        private quizContainer db = new quizContainer();
+        private webQuizModel db = new webQuizModel();
 
         // GET: quizs
         public ActionResult Index()

@@ -211,6 +211,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>quiz.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\webQuizModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -219,6 +220,10 @@
     <Content Include="App_Data\quiz.mdf" />
     <Content Include="App_Data\quiz_log.ldf">
       <DependentUpon>quiz.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\webquizdb.mdf" />
+    <Content Include="App_Data\webquizdb_log.ldf">
+      <DependentUpon>webquizdb.mdf</DependentUpon>
     </Content>
     <Content Include="assets\css\quiz.css" />
     <Content Include="assets\css\style.css" />
