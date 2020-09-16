@@ -81,7 +81,7 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="~/Home">Home</a></li>
+                    <li @*class="active"*@><a href="~/Home">Home</a></li>
                     <li class="drop-down">
                         <a href="#services">Raise Awarness</a>
                         <ul>
@@ -92,7 +92,16 @@
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Statistics", "DataVirtualization", "Home")</li>
-                    <li><a href="~/quizs/Index">Know the condition</a></li>
+                    <li class="drop-down">
+                        <a href="~/quizs/Index">Support your friend</a>
+                        <ul>
+                            <li><a href="~/quizs/ViolenceSign"> Signs of family violence</a></li>
+                            <li><a href="~/quizs/Index"> Know their condition</a></li>
+                            <li><a href="~/quizs/HelpSuggestion"> How I can help</a></li>
+                            <li><a href="~/quizs/CheckList"> Check list</a></li>
+
+                        </ul>
+                    </li>
                     @*<li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#team">Team</a></li>*@
                     @*<li class="drop-down">
@@ -136,7 +145,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="member" data-aos="fade-up">
-                            <div class="pic"><a href="~/Home/Information1"><img src="~/assets/img/navicon1.png" alt="information1"></a></div>
+                            <div class="pic"><a href="~/Home/#services"><img src="~/assets/img/navicon1.png" alt="information1"></a></div>
                             <h4>Raise Awareness </h4>
                             <span>Why is important to support people suffering family violence? What you need to know?</span>
                         </div>

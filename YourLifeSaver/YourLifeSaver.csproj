@@ -227,6 +227,18 @@
     </Content>
     <Content Include="assets\css\quiz.css" />
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\img\contactGroup\2.png" />
+    <Content Include="assets\img\contactGroup\1.png" />
+    <Content Include="assets\img\contactGroup\1detail.png" />
+    <Content Include="assets\img\contactGroup\4.png" />
+    <Content Include="assets\img\contactGroup\3.png" />
+    <Content Include="assets\img\contactGroup\5.png" />
+    <Content Include="assets\img\contactGroup\2detail.png" />
+    <Content Include="assets\img\contactGroup\3detial.png" />
+    <Content Include="assets\img\contactGroup\4detail.png" />
+    <Content Include="assets\img\contactGroup\5detail.png" />
+    <Content Include="assets\img\helpsuggestion2.jpg" />
+    <Content Include="assets\img\helpsuggestion.jpg" />
     <Content Include="assets\img\info\1.1.png" />
     <Content Include="assets\img\info\1.2.png" />
     <Content Include="assets\img\info\1.3.png" />
@@ -473,6 +485,9 @@
     <Content Include="Views\quizs\Edit.cshtml" />
     <Content Include="Views\quizs\Index.cshtml" />
     <Content Include="Views\quizs\Quiz.cshtml" />
+    <Content Include="Views\quizs\HelpSuggestion.cshtml" />
+    <Content Include="Views\quizs\CheckList.cshtml" />
+    <Content Include="Views\quizs\ViolenceSign.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

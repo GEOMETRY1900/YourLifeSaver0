@@ -144,5 +144,20 @@ namespace YourLifeSaver.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult HelpSuggestion()
+        {
+            return View();
+        }
+
+        public ActionResult CheckList()
+        {
+            return View();
+        }
+
+        public ActionResult ViolenceSign()
+        {
+            return View();
+        }
     }
 }
