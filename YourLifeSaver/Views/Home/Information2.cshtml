@@ -4,88 +4,106 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>jQuery Quiz</title>
-    <link rel="stylesheet" type="text/css" href="../dist/jquery.quiz-min.css" />
-</head>
-<body>
-    <div id="quiz">
-        <div id="quiz-header">
-            <h1>Basic Quiz Demo</h1>
-            <p><a id="quiz-home-btn">Home</a></p>
+<!-- ======= Features Section ======= -->
+<section id="features" class="features section-bg">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-aos="fade-in">Features</h2>
+            <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-        <div id="quiz-start-screen">
-            <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
-        </div>
-    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="../dist/jquery.quiz-min.js"></script>
-    <script>$('#quiz').quiz({
-    //resultsScreen: '#results-screen',
-    //counter: false,
-    //homeButton: '#custom-home',
-    counterFormat: 'Question %current of %total',
-    questions: [
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2',
-          'Answer 3',
-          'Answer 4'
-        ],
-        'correctIndex': 1,
-        'correctResponse': 'Custom correct response.',
-        'incorrectResponse': 'Custom incorrect response.'
-      },
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2'
-        ],
-        'correctIndex': 1,
-        'correctResponse': 'Custom correct response.',
-        'incorrectResponse': 'Custom incorrect response.'
-      },
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2',
-          'Answer 3',
-          'Answer 4'
-        ],
-        'correctIndex': 2,
-        'correctResponse': 'Custom correct response.',
-        'incorrectResponse': 'Custom incorrect response.'
-      },
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2'
-        ],
-        'correctIndex': 1,
-        'correctResponse': 'Custom correct response.',
-        'incorrectResponse': 'Custom incorrect response.'
-      },
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2',
-          'Answer 3',
-          'Answer 4'
-        ],
-        'correctIndex': 3,
-        'correctResponse': 'Custom correct response.',
-        'incorrectResponse': 'Custom incorrect response.'
-      }
-    ]
-  });</script>
-</body>
-</html>
+        <div class="row content">
+            <div class="col-md-5" data-aos="fade-right">
+                <img src="~/assets/img/features-1.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 pt-4" data-aos="fade-left">
+                <h3>What are the impacts of family violence?</h3>
+                <p>
+                    Children living in a household where there is domestic & family
+                    violence usually know exactly what is going on and they may
+                    blame themselves for the violence and tension in the household.
+                    Domestic & family violence is a form of child abuse.
+                    Children need support
+                    to deal with the trauma
+                    they experience and
+                    the disruption it causes
+                    to their development.
+                    Unborn children or
+                    small babies can also be directly affected by the violence and by
+                    their mother’s fear or stress. Be aware that during pregnancy and
+                    around the birth of a new baby there is often a greater risk of
+                    violence. Many women are hopeful that these major life events will
+                    change their partner. However, there is very clear evidence that
+                    these times are often triggers for increased violence due to jealousy
+                    and issues of control. Some children may not have the words to tell
+                    you how it is affecting them, but their behaviors show you how they
+                    feel.
+                </p>
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                <img src="~/assets/img/features-2.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                <h3>For example: </h3>
+   
+                <p class="font-italic">
+                    Aggressive, demanding behavior and language
+                </p>
+                <ul>
+                    <li><i class="icofont-check"></i> Low self-esteem and shame</li>
+                    <li>
+                        <i class="icofont-check"></i> Physical reactions; eating and
+                        sleeping problems, stomach
+                    </li>
+                    <li><i class="icofont-check"></i> cramps, bedwetting, headaches</li>
+                    <li>
+                        <i class="icofont-check"></i> Withdrawing from friends or
+                        difficulty making and keeping
+                        friends
+                    </li>
+                    <li><i class="icofont-check"></i> Problems with school work</li>
+                    <li><i class="icofont-check"></i> Becoming a victim or a perpetrator of bullying</li>
+                    <li><i class="icofont-check"></i> Using drugs or alcohol</li>
+                    <li><i class="icofont-check"></i> Self harming</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-5" data-aos="fade-right">
+                <img src="~/assets/img/features-3.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 pt-5" data-aos="fade-left">
+                <h3>Children need:</h3>
+                <ul>
+                    <li>
+                        <i class="icofont-check"></i> To know they are not forgotten and that you notice what they are
+                        dealing with
+                    </li>
+                    <li><i class="icofont-check"></i> To feel and hear they are loved </li>
+                    <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+                    <li>
+                        <i class="icofont-check"></i> Protection from direct physical, sexual, emotional and verbal
+                        abuse
+                    </li>
+                    <li>
+                        <i class="icofont-check"></i> Encouragement to talk about their worries and make sense of
+                        what is happening
+                    </li>
+                    <li><i class="icofont-check"></i> Reassurance that the violence is not their fault </li>
+                    <li><i class="icofont-check"></i> To feel and hear they are loved </li>
+                    <li>
+                        <i class="icofont-check"></i> Help with making their own safety plan for where to go when they
+                        are fearful
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Features Section -->
