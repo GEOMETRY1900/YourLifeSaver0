@@ -275,6 +275,10 @@
     <Content Include="assets\img\team\team-2.jpg" />
     <Content Include="assets\img\team\team-3.jpg" />
     <Content Include="assets\img\team\team-4.jpg" />
+    <Content Include="assets\img\navicon4.png" />
+    <Content Include="assets\img\navicon3.png" />
+    <Content Include="assets\img\navicon2.png" />
+    <Content Include="assets\img\navicon1.png" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\time.js" />
     <Content Include="assets\vendor\aos\aos.css" />
