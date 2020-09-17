@@ -15,25 +15,26 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    @*bootstrap css file*@
-    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    @*library css file*@
-    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
     <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="~/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="~/assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="~/assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="~/assets/css/quiz.css" rel="stylesheet" />
 
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+    @*bootstrap css file*@
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    @*library css file*@
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link href="~/assets/css/style.css" rel="stylesheet">
@@ -81,7 +82,7 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li @*class="active"*@><a href="~/Home#intro">Home</a></li>
+                    <li class="active"><a href="~/Home#intro">Home</a></li>
                     <li class="drop-down">
                         <a href="~/Home#services">Raise Awarness</a>
                         <ul>
@@ -91,9 +92,9 @@
                             <li>@Html.ActionLink("Some tips for your needs!", "Information4", "Home")></li>
                         </ul>
                     </li>
-                    <li><a href="~/Home/DataVirtualization#">Statistics</a></li>
+                    <li><a href="~/Home/DataVirtualization#">Know the cases</a></li>
                     <li class="drop-down">
-                        <a href="~/quizs/Index">Support your friend</a>
+                        <a href="~/quizs/ViolenceSign">Support your friend</a>
                         <ul>
                             <li><a href="~/quizs/ViolenceSign"> Signs of family violence</a></li>
                             <li><a href="~/quizs/Index"> Know their condition</a></li>
