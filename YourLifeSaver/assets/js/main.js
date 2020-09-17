@@ -86,14 +86,14 @@
     return false;
   });
 
-   // Header scroll class
-   $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('#header').addClass('header-scrolled');
-        } else {
-            $('#header').removeClass('header-scrolled');
-        }
-    });
+   //// Header scroll class
+   //$(window).scroll(function () {
+   //     if ($(this).scrollTop() > 100) {
+   //         $('#header').addClass('header-scrolled');
+   //     } else {
+   //         $('#header').removeClass('header-scrolled');
+   //     }
+   // });
 
   // Porfolio isotope and filter
   $(window).on('load', function() {

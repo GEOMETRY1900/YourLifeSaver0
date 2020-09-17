@@ -70,20 +70,20 @@
 
 </head>
 <body>
-    <header id="header" class="">
+    <header id="header" class="header-scrolled">
         <div class="container d-flex">
 
             <div class="logo mr-auto">
                 @*<h1 class="text-light"><a href="~/Views/Home/Index.cshtml">Bocor<span>.</span></a></h1>*@
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="#"><img src="~/assets/img/Logo.png" alt="" class="img-fluid"></a>
+                <a href="~/Home#intro"><img src="~/assets/img/Logo.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li @*class="active"*@><a href="~/Home">Home</a></li>
+                    <li @*class="active"*@><a href="~/Home#intro">Home</a></li>
                     <li class="drop-down">
-                        <a href="#services">Raise Awarness</a>
+                        <a href="~/Home#services">Raise Awarness</a>
                         <ul>
                             <li>@Html.ActionLink("Know Violence", "Information1", "Home")</li>
                             <li>@Html.ActionLink("Effects of family violence on children", "Information2", "Home")</li>
@@ -91,7 +91,7 @@
                             <li>@Html.ActionLink("Some tips for your needs!", "Information4", "Home")></li>
                         </ul>
                     </li>
-                    <li>@Html.ActionLink("Statistics", "DataVirtualization", "Home")</li>
+                    <li><a href="~/Home/DataVirtualization#">Statistics</a></li>
                     <li class="drop-down">
                         <a href="~/quizs/Index">Support your friend</a>
                         <ul>
@@ -99,7 +99,7 @@
                             <li><a href="~/quizs/Index"> Know their condition</a></li>
                             <li><a href="~/quizs/HelpSuggestion"> How I can help</a></li>
                             <li><a href="~/quizs/CheckList"> Check list</a></li>
-
+                        
                         </ul>
                     </li>
                     @*<li><a href="#portfolio">Portfolio</a></li>
@@ -145,7 +145,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="member" data-aos="fade-up">
-                            <div class="pic"><a href="~/Home/#services"><img src="~/assets/img/navicon1.png" alt="information1"></a></div>
+                            <div class="pic"><a href="~/Home#services"><img src="~/assets/img/navicon1.png" alt="information1"></a></div>
                             <h4>Raise Awareness </h4>
                             <span>Why is important to support people suffering family violence? What you need to know?</span>
                         </div>
@@ -153,7 +153,7 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="100">
-                            <div class="pic"><a href="~/Home/Information2"><img src="~/assets/img/navicon2.png" alt="information2"></a></div>
+                            <div class="pic"><a href="~/quizs/ViolenceSign"><img src="~/assets/img/navicon2.png" alt="information2"></a></div>
                             <h4>Know their condition and support</h4>
                             <span>
                                 How you can help your friends/ family to evalute their current condiotion and help them stay away from family violence?
