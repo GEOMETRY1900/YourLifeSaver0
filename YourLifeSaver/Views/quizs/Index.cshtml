@@ -4,171 +4,222 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<section id="quiztitle" class="features section-bg">
-    <div class="container">
-        <div class="section-title">
-            <h2>How can I know</h2>
-            <p> Choose the option below to let you know the condition</p>
-        </div>
+<section id="quiz" class="features section-bg">
+    <div class="sidebar-container" style="background:#ffffff; position:absolute" >
+        <ul class="sidebar-navigation"style="background:#ffffff">
+            <li class="header" style="font-size:20px; padding-top:80px"><b>Support your freind</b></li>
+            <li>
+                <a href="~/quizs/ViolenceSign">
+                    Signs of family violence
+                </a>
+            </li>
+            <li><a href="~/quizs/Index" style="color:#e65c37"> Know their condition</a></li>
 
-        <div class="row content" >
-            <div class="container-fluid">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+            <li><a href="~/quizs/HelpSuggestion"> How I can help</a></li>
+            <li><a href="~/quizs/CheckList"> Check list</a></li>
+            <li><a href="~/quizs/SupportGroup">Support group</a></li>
+        </ul>
+    </div>
 
-                        <div class="modal-header">
-                            <div id="question1">
-                                    <h3><span class="label label-warning">1</span>  Does your friends feel anxious or nervous when they are around their partner?</h3>
-                            </div>
-                            <div id="question2" style="display:none;">
-                                    <h3><span class="label label-warning">2</span>Does your friend make something to make their partner happy?</h3>
-                            </div>
-                            <div id="question3" style="display:none;">
-                                    <h3><span class="label label-warning">3</span> Does your friend are afraid to post or voicing a different opinion against their partner?</h3>
-                            </div>
-                            <div id="question4" style="display:none;">
-                                    <h3><span class="label label-warning">4</span> Does your friend’s partner always embarrass them in front of others?</h3>
-                            </div>
-                            <div id="question5" style="display:none;">
-                                    <h3><span class="label label-warning">5</span> Is your friend’s partner jealous, such as accusing they may of having affairs?</h3>
-                            </div>
-                            <div id="question6" style="display:none;">
-                                    <h3><span class="label label-warning">6</span>  Does your friends complains that their partner always beat them?</h3>
-                            </div>
-                            <div id="question7" style="display:none;">
-                                    <h3><span class="label label-warning">7</span> Do you have a long time of not seeing your friends because their partner not allow them to.</h3>
-                            </div>
-                            <div id="question8" style="display:none;">
-                                    <h3><span class="label label-warning">8</span> Do you think your friend partner’s behavior have make you feel something is wrong?</h3>
-                            </div>
-                            <div id="question9" style="display:none;">
-                                    <h3><span class="label label-warning">9</span>Does your friend told you that they have been threaten by their partner?</h3>
-                            </div>
-                            <div id="question10" style="display:none;">
-                                    <h3><span class="label label-warning">10</span> Does your friend try to please their partner to avoid quarreling?</h3>
-                            </div>
-                            <div id="question11" style="display:none;">
-                                    <h3><span class="label label-warning">11</span> Does your friends telling you that they feel frustrated, nothing they do can meet their partner’s demand?</h3>
-                            </div>
-                            <div id="question12" style="display:none;">
-                                    <h3>
-                                        <span class="label label-warning">12</span>  Does your friend tell you they have been threaten if they try to leave him or her,
-                                        they will never see their children, friends or family again?
-                                    </h3>
-                            </div>
-                            <div id="question13" style="display:none;">
-                                    <h3><span class="label label-warning">13</span>Does your friend have thingking of suicide?</h3>
-                            </div>
-                            <div id="question14" style="display:none;">
-                                    <h3>
-                                        <span class="label label-warning">14</span> Is there always an excuse for your friend to find for their partner’s behavior?
-                                        (“The alcohol or drugs made me do it! My job is too stressful! If dinner was on time I wouldn’t have hit you! I was just joking!”)
-                                    </h3>
-                            </div>
-                            <div id="question15" style="display:none;">
-                                    <h3><span class="label label-warning">15</span>  Is there much unknown bruises, cuts and scratches on your friends?</h3>
-                            </div>
-                        </div>
+    <div class="content-container">
 
-                            <div class="modal-body">
+        <div class="container-fluid">
 
-                                <div class="quiz" id="choice1" data-toggle="buttons">
-                                    <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
-                                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Sometimes</label>
-                                    <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">3 Regularly</label>
+            <!-- Main component for a primary marketing message or call to action -->
+            <div class="jumbotron" style="background:#ffffff">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>How can I know</h2>
+                        <p> Choose the option below to let you know the condition</p>
+                    </div>
+
+                    <div class="row content">
+                        <div class="container-fluid">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <div id="question1">
+
+                                            <h3><span class="label label-warning">1/11</span>  Does your friends feel anxious or nervous when they are around their partner?</h3>
+
+                                        </div>
+                                        <div id="question2" style="display:none;">
+                                            <h3><span class="label label-warning">2/11</span>Does your friend make something to make their partner happy?</h3>
+                                        </div>
+                                        <div id="question3" style="display:none;">
+                                            <h3><span class="label label-warning">3/11</span> Is your friend afraid to post or voice a different opinion against their partner?</h3>
+                                        </div>
+                                        <div id="question4" style="display:none;">
+                                            <h3><span class="label label-warning">4/11</span> Does your friend’s partner always embarrass them in front of others?</h3>
+                                        </div>
+                                        <div id="question5" style="display:none;">
+                                            <h3><span class="label label-warning">5/11</span>Is your friend complain that their partner always beat her or threaten her?</h3>
+                                        </div>
+                                        <div id="question6" style="display:none;">
+                                            <h3><span class="label label-warning">6/11</span> Is there a long time that you haven’t seen your friend because their partner is not allowed so?</h3>
+                                        </div>
+                                        <div id="question7" style="display:none;">
+                                            <h3><span class="label label-warning">7/11</span>Do you think your friend partner’s behaviour has made you feel something is wrong?</h3>
+                                        </div>
+                                        <div id="question8" style="display:none;">
+                                            <h3><span class="label label-warning">8/11</span>Does your friends telling you that they feel frustrated, nothing they do can meet their partner’s demand?</h3>
+                                        </div>
+                                        <div id="question9" style="display:none;">
+                                            <h3><span class="label label-warning">9/11</span>Does your friend has the actions to hurt themselves?</h3>
+                                        </div>
+                                        <div id="question10" style="display:none;">
+                                            <h3><span class="label label-warning">10/11</span> Is there always an excuse for your friend to find for their partner’s behaviour? </h3>
+                                        </div>
+                                        <div id="question11" style="display:none;">
+                                            <h3><span class="label label-warning">11/11</span> Is there much unknown bruises, cuts, and scratches on your friends?</h3>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="modal-body">
+
+                                        <div class="quiz" id="choice1" data-toggle="buttons">
+                                            <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
+                                            <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Sometimes</label>
+                                            <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">3 Always</label>
+                                        </div>
+                                        <!-- 5, 6,7, 9 ,10,11-->
+                                        <div class="quiz" id="choice2" data-toggle="buttons" style="display:none;">
+                                            <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
+                                            <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Yes</label>
+                                        </div>
+                                        <!-- 4,5,-->
+                                        <div class="quiz" id="choice3" data-toggle="buttons" style="display:none;">
+                                            <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
+                                            <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Sometimes</label>
+                                            <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">3 Always</label>
+                                        </div>
+                                        <!-- 12,15-->
+                                        <div class="quiz" id="choice4" data-toggle="buttons" style="display:none;">
+                                            <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
+                                            <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Sometimes</label>
+                                            <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">3 Always</label>
+                                        </div>
+
+
+                                        <!--Result-->
+                                        <div class="quiz" id="result1" style="display:none;">
+                                            <h4 style="font-size :22px">Domestic abuse is likely</h4>
+                                            <div class="col-md-7 pt-4" data-aos="fade-left">
+                                                <p>
+                                                    You are most likely involved in an abusive relationship. You should seek immediate assistance within your local community from a mental health or social services professional to help you deal with this situation.
+                                                    <br />
+                                                    You are the victim of emotional abuse if your partner:
+                                                    <br />
+                                                    -	Repeatedly gives you destructive criticism, verbal threats and browbeating.
+                                                    <br />
+                                                    -	Always claims to be right.
+                                                    <br />
+                                                    -	Excludes you from making decisions and claims to be the head of the household.
+                                                    <br />
+                                                    -	Abuses your trust by lying, hiding important information and papers, cheating or being inappropriately jealous.
+                                                    <br />
+                                                    -	Minimizes or denies abusive behavior.
+                                                    <br />
+                                                    -	Constantly shows disrespect, puts you down or embarrasses you in front of others.
+                                                    <br />
+                                                    -	Harasses you by following you or checking up on you.
+                                                    <br />
+                                                    -	Prevents you from seeing your relatives or friends or insists on going everywhere with you.
+                                                    <br />
+                                                    -	Monitors your phone calls.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="quiz" id="result2" style="display:none;">
+                                            <h4 style="font-size :22px">Domestic abuse is possible</h4>
+                                            <p>
+                                                You may be involved in a relationship that could be considered abusive, either emotionally or physically.
+                                                <br />
+                                                You are probably the victim of emotional abuse if your partner:
+                                                <br />
+                                                -	Repeatedly gives you destructive criticism, verbal threats and browbeating.
+                                                <br />
+                                                -	Always claims to be right.
+                                                <br />
+                                                -	Excludes you from making decisions and claims to be the head of the household.
+                                                <br />
+                                                -	Abuses your trust by lying, hiding important information and papers, cheating or being inappropriately jealous.
+                                                <br />
+                                                -	Minimizes or denies abusive behavior.
+                                                <br />
+                                                -	Constantly shows disrespect, puts you down or embarrasses you in front of others.
+                                                <br />
+                                                -	Harasses you by following you or checking up on you.
+                                                <br />
+                                                -	Prevents you from seeing your relatives or friends or insists on going everywhere with you.
+                                                <br />
+                                                -	Monitors your phone calls.
+                                                <br />
+                                                You are probably a victim of physical abuse if your partner:
+                                                <br />
+                                                -	Intimidates you through angry or threatening gestures.
+                                                <br />
+                                                -	Destroys your belongings or household items.
+                                                <br />
+                                                -	Coerces you to have sex or perform sexual acts against your will.
+                                                <br />
+                                                -	Kicks, bites, stabs, pushes, burns or chokes you.
+                                                <br />
+                                                -	Uses weapons to threaten or harm you or others you love.
+
+                                            </p>
+                                        </div>
+
+                                        <div class="quiz" id="result3" style="display:none;">
+                                            <h4 style="font-size :22px">Domestic abuse is unlikely</h4>
+                                            <p>
+                                                You may be involved in a relationship that could be considered abusive, either emotionally or physically.
+                                                <br />
+                                                You have answered this domestic violence screening in such a way as to suggest that you are not likely currently in an abusive
+                                                (emotionally or physically) relationship. You experience the normal variations within a healthy relationship that mark most people's intimate,
+                                                social interactions with one another over a period of time.
+
+
+
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer text-muted">
+                                        <div class="btn-default" id="finish1" style="display:none;">@Html.ActionLink("More Info", "Quiz", new { id = 1 })</div>
+                                        <div class="btn-default" id="finish2" style="display:none;">@Html.ActionLink("More Info", "Quiz", new { id = 2 })</div>
+                                        <div class="btn-default" id="finish3" style="display:none;">@Html.ActionLink("More Info", "Quiz", new { id = 3 })</div>
+
+                                    </div>
                                 </div>
-                                <!-- 6,7,-->
-                                <div class="quiz" id="choice2" data-toggle="buttons" style="display:none;">
-                                    <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
-                                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Yes</label>
-                                </div>
-                                <!-- 4,5,-->
-                                <div class="quiz" id="choice3" data-toggle="buttons" style="display:none;">
-                                    <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
-                                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Sometimes</label>
-                                    <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">3 Often</label>
-                                </div>
-                                <!-- 12,15-->
-                                <div class="quiz" id="choice4" data-toggle="buttons" style="display:none;">
-                                    <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
-                                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Sometimes</label>
-                                    <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">3 Not applicable</label>
-                                </div>
-
-
-                                <!--Result-->
-                                <div class="quiz" id="result1" style="display:none;">
-                                    <h4>Domestic abuse is likely</h4>
-                                    <p>
-                                        You are most likely involved in an abusive relationship. You should seek immediate assistance within your local community from a mental health or social services professional to help you deal with this situation.
-                                        <br />
-                                        You are the victim of emotional abuse if your partner:
-                                        -	Repeatedly gives you destructive criticism, verbal threats and browbeating.
-                                        -	Always claims to be right.
-                                        -	Excludes you from making decisions and claims to be the head of the household.
-                                        -	Abuses your trust by lying, hiding important information and papers, cheating or being inappropriately jealous.
-                                        -	Minimizes or denies abusive behavior.
-                                        -	Constantly shows disrespect, puts you down or embarrasses you in front of others.
-                                        -	Harasses you by following you or checking up on you.
-                                        -	Prevents you from seeing your relatives or friends or insists on going everywhere with you.
-                                        -	Monitors your phone calls.
-
-                                    </p>
-                                </div>
-
-                                <div class="quiz" id="result2" style="display:none;">
-                                    <h4>Domestic abuse is possible</h4>
-                                    <p>
-                                        You may be involved in a relationship that could be considered abusive, either emotionally or physically.
-                                        <br />
-                                        You are probably the victim of emotional abuse if your partner:
-                                        -	Repeatedly gives you destructive criticism, verbal threats and browbeating.
-                                        -	Always claims to be right.
-                                        -	Excludes you from making decisions and claims to be the head of the household.
-                                        -	Abuses your trust by lying, hiding important information and papers, cheating or being inappropriately jealous.
-                                        -	Minimizes or denies abusive behavior.
-                                        -	Constantly shows disrespect, puts you down or embarrasses you in front of others.
-                                        -	Harasses you by following you or checking up on you.
-                                        -	Prevents you from seeing your relatives or friends or insists on going everywhere with you.
-                                        -	Monitors your phone calls.
-                                        <br />
-                                        You are probably a victim of physical abuse if your partner:
-                                        -	Intimidates you through angry or threatening gestures.
-                                        -	Destroys your belongings or household items.
-                                        -	Coerces you to have sex or perform sexual acts against your will.
-                                        -	Kicks, bites, stabs, pushes, burns or chokes you.
-                                        -	Uses weapons to threaten or harm you or others you love.
-
-
-                                    </p>
-                                </div>
-
-                                <div class="quiz" id="result3" style="display:none;">
-                                    <h4>Domestic abuse is unlikely</h4>
-                                    <p>
-                                        You may be involved in a relationship that could be considered abusive, either emotionally or physically.
-                                        <br />
-                                        You have answered this domestic violence screening in such a way as to suggest that you are not likely currently in an abusive
-                                        (emotionally or physically) relationship. You experience the normal variations within a healthy relationship that mark most people's intimate,
-                                        social interactions with one another over a period of time.
-
-
-
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="modal-footer text-muted">
-                                <div class="btn-default" id="finish1" style="display:none;">@Html.ActionLink("More Info", "Quiz", new { id = 1})</div>
-                                <div class="btn-default" id="finish2" style="display:none;">@Html.ActionLink("More Info", "Quiz", new { id = 2 })</div>
-                                <div class="btn-default" id="finish3" style="display:none;">@Html.ActionLink("More Info", "Quiz", new { id = 3 })</div>
-
                             </div>
                         </div>
                     </div>
+
+
+                    <div id="helpBtn" class="section-title" style="display: none;">
+                        <button type="button" class="btn btn-outline-primary" style="background-color:#f0ad4e; "><a href="~/quizs/HelpSuggestion">Tips for help </a></button>
+                    </div>
+
+                    <div class="modal-footer text-muted">
+                        <p style="font-size:10px">This quiz is based on Psych Central Research Team's research.<a href="https://psychcentral.com/quizzes/domestic-violence-quiz/">Click here to their original research</a></p>
+
+
+                    </div>
+
+                </div>
             </div>
+
         </div>
+
+
+
     </div>
-    
 </section>
 
 <script>
@@ -177,17 +228,12 @@
         var totalcount = 0;
         var currentQuiz = '#choice1';
 
+
         $("label.btn").on('click', function () {
 
             var currentQuestion = '#question' + i;
-            if (i == 4 || i == 5) {
-                currentQuiz = '#choice3';
-            }
-            else if (i == 6 || i == 7) {
+            if (i == 5 || i == 6 || i == 7 || i == 9 || i == 10 || i == 11) {
                 currentQuiz = '#choice2';
-            }
-            else if (i == 12 || i == 15) {
-                currentQuiz = '#choice4';
             }
             else {
                 currentQuiz = '#choice1';
@@ -195,24 +241,20 @@
             ++i;
             var nextQuestion = '#question' + i;
             var nextQuiz = '#choice1'
-            if (i == 4 || i == 5) {
-                nextQuiz = '#choice3';
-            }
-            else if (i == 6 || i == 7) {
+            if (i == 5 || i == 6 || i == 7 || i == 9 || i == 10 || i == 11) {
                 nextQuiz = '#choice2';
-            }
-            else if (i == 12 || i == 15) {
-                nextQuiz = '#choice4';
             }
             else {
                 nextQuiz = '#choice1';
             }
+
             var choice = $(this).find('input:radio').val();
             totalcount += parseInt(choice);
 
             $(currentQuiz).fadeOut();
             $(currentQuestion).hide();
-            if (i < 16) {
+            if (i < 12) {
+
                 $(nextQuestion).show();
                 setTimeout(function () {
 
@@ -221,24 +263,44 @@
                 }, 800);
             }
 
-            if (i == 16) {
+            if (i == 12) {
 
-                if (totalcount >= 11) {
+                if (totalcount >= 8) {
 
                     $('#result1').fadeIn();
-                    $('#finish1').fadeIn();
+                    //$('#finish1').fadeIn();
+                    $('#helpBtn').fadeIn();
                 }
-                else if (totalcount < 6) {
+                else if (totalcount < 4) {
                     $('#result3').fadeIn();
 
-                    $('#finish3').fadeIn();
+                    $('#helpBtn').fadeIn();
+                    //$('#finish3').fadeIn();
                 }
                 else {
                     $('#result2').fadeIn();
-                    $('#finish2').fadeIn();
+                    //$('#finish2').fadeIn();
+                    $('#helpBtn').fadeIn();
                 }
             }
-        });        
+        });
+
+
+
+
+        // Click handler for the 'prev' button
+        $('#prev').on('click', function (e) {
+            e.preventDefault();
+
+            if (quiz.is(':animated')) {
+                return false;
+            }
+
+            choose();
+            questionCounter--;
+            displayNext();
+        });
+
     });
 
 

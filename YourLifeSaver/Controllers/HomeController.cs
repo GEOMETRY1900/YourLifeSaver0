@@ -54,5 +54,9 @@ namespace YourLifeSaver.Controllers
         {
             return View();
         }
+        public ActionResult RaiseAwarness()
+        {
+            return View();
+        }
     }
 }

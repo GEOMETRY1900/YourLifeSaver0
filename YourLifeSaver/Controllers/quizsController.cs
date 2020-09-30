@@ -159,5 +159,10 @@ namespace YourLifeSaver.Controllers
         {
             return View();
         }
+
+        public ActionResult SupportGroup()
+        {
+            return View();
+        }
     }
 }
