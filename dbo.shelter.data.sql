@@ -1,0 +1,1 @@
+﻿INSERT INTO [dbo].[shelter] ([ID], [s_Name], [Address_2], [Suburb], [Longitude], [Latitude]) VALUES (1, N'614/AMP Youth Bus', N'Bus located corner Swanston and Flinders Streets - Mobile service please check provider''s website for updated location', N'Melbourne', N'144.967553', N'-37.817291')

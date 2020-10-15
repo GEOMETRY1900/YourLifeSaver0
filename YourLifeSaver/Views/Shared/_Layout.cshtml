@@ -23,6 +23,7 @@
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link href="~/Content/DataTables/css/dataTables.bootstrap.min.css" rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
     <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -86,7 +87,7 @@
                 <ul>
                     <li @*class="active"*@><a href="~/Home#intro">Home</a></li>
                     <li class="drop-down">
-                        <a href="~/Home/RaiseAwarness">Raise Awarness</a> 
+                        <a href="~/Home/RaiseAwarness">Raise Awarness<i class="bx bx-chevron-down"></i></a> 
                         <ul>
                             <li>@Html.ActionLink("Know Violence", "Information1", "Home")</li>
                             <li>@Html.ActionLink("Effects of family violence on children", "Information2", "Home")</li>
@@ -96,13 +97,14 @@
                     </li>
                     <li><a href="~/Home/DataVirtualization">Know your cases</a></li>
                     <li class="drop-down">
-                        <a href="~/quizs/ViolenceSign">Support your friend</a> 
+                        <a href="~/quizs/ViolenceSign">Support your friend<i class="bx bx-chevron-down"></i></a> 
                         <ul>
                             <li><a href="~/quizs/ViolenceSign"> Signs of family violence</a></li>
                             <li><a href="~/quizs/Index"> Know their condition</a></li>
                             <li><a href="~/quizs/HelpSuggestion"> How I can help</a></li>
                             <li><a href="~/quizs/CheckList"> Check list</a></li>
                             <li><a href="~/quizs/SupportGroup">Support group</a></li>
+                            <li><a href="~/shelters/Index">Accomodation</a></li>
 
                         </ul>
                     </li>

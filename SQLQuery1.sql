@@ -1,0 +1,9 @@
+﻿/* CREATE TABLE */
+CREATE TABLE dbo.shelter(
+ID Int PRIMARY KEY,
+s_Name VARCHAR(500),
+Address_2 VARCHAR(500),
+Suburb VARCHAR(100),
+Longitude VARCHAR(100),
+Latitude VARCHAR(100)
+);
