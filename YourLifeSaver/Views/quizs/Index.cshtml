@@ -41,39 +41,34 @@
                                     <div class="modal-header">
                                         <div id="question1">
 
-                                            <h3><span class="label label-warning">1/11</span>  Does your friends feel anxious or nervous when they are around their partner?</h3>
+                                            <h3><span class="label label-warning">1/8</span>  Does your friends feel anxious or nervous when they are around their partner?</h3>
 
                                         </div>
-                                        <div id="question2" style="display:none;">
-                                            <h3><span class="label label-warning">2/11</span>Does your friend make something to make their partner happy?</h3>
+
+                                        <div id="question11" style="display:none;">
+                                            <h3><span class="label label-warning">2/8</span> Does your friend make excuses for their partner’s behaviour? </h3>
                                         </div>
+
                                         <div id="question3" style="display:none;">
-                                            <h3><span class="label label-warning">3/11</span> Is your friend afraid to post or voice a different opinion against their partner?</h3>
+                                            <h3><span class="label label-warning">3/8</span> Does your friend tell you that she is feels belittled voicing her concerns to her partner?</h3>
                                         </div>
                                         <div id="question4" style="display:none;">
-                                            <h3><span class="label label-warning">4/11</span> Does your friend’s partner always embarrass them in front of others?</h3>
+                                            <h3><span class="label label-warning">4/8</span> Does your friend’s partner always embarrass them in front of others?</h3>
                                         </div>
                                         <div id="question5" style="display:none;">
-                                            <h3><span class="label label-warning">5/11</span>Is your friend complain that their partner always beat her or threaten her?</h3>
+                                            <h3><span class="label label-warning">5/8</span>Is your friend complain that their partner always beat her or threaten her?</h3>
                                         </div>
                                         <div id="question6" style="display:none;">
-                                            <h3><span class="label label-warning">6/11</span> Is there a long time that you haven’t seen your friend because their partner is not allowed so?</h3>
+                                            <h3><span class="label label-warning">6/8</span> Is there a long time that you haven’t seen your friend because their partner is not allowed so?</h3>
                                         </div>
                                         <div id="question7" style="display:none;">
-                                            <h3><span class="label label-warning">7/11</span>Do you think your friend partner’s behaviour has made you feel something is wrong?</h3>
-                                        </div>
-                                        <div id="question8" style="display:none;">
-                                            <h3><span class="label label-warning">8/11</span>Does your friends telling you that they feel frustrated, nothing they do can meet their partner’s demand?</h3>
+                                            <h3><span class="label label-warning">7/8</span>Does your friend  say she feels threatened by her partner?</h3>
                                         </div>
                                         <div id="question9" style="display:none;">
-                                            <h3><span class="label label-warning">9/11</span>Does your friend has the actions to hurt themselves?</h3>
+                                            <h3><span class="label label-warning">8/8/span>Are you concerned about your friend’s negative thoughts?</h3>
+
                                         </div>
-                                        <div id="question10" style="display:none;">
-                                            <h3><span class="label label-warning">10/11</span> Is there always an excuse for your friend to find for their partner’s behaviour? </h3>
-                                        </div>
-                                        <div id="question11" style="display:none;">
-                                            <h3><span class="label label-warning">11/11</span> Is there much unknown bruises, cuts, and scratches on your friends?</h3>
-                                        </div>
+            
 
                                     </div>
 
@@ -84,7 +79,7 @@
                                             <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Sometimes</label>
                                             <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">3 Always</label>
                                         </div>
-                                        <!-- 5, 6,7, 9 ,10,11-->
+                                        <!-- 2, 5, 6,7, 8,-->
                                         <div class="quiz" id="choice2" data-toggle="buttons" style="display:none;">
                                             <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">1 No</label>
                                             <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">2 Yes</label>
@@ -232,7 +227,7 @@
         $("label.btn").on('click', function () {
 
             var currentQuestion = '#question' + i;
-            if (i == 5 || i == 6 || i == 7 || i == 9 || i == 10 || i == 11) {
+            if (i == 5 || i == 6 || i == 7 || i == 8 || i == 2) {
                 currentQuiz = '#choice2';
             }
             else {
@@ -241,7 +236,7 @@
             ++i;
             var nextQuestion = '#question' + i;
             var nextQuiz = '#choice1'
-            if (i == 5 || i == 6 || i == 7 || i == 9 || i == 10 || i == 11) {
+            if (i == 5 || i == 6 || i == 7 || i == 8 || i == 2) {
                 nextQuiz = '#choice2';
             }
             else {
@@ -253,7 +248,7 @@
 
             $(currentQuiz).fadeOut();
             $(currentQuestion).hide();
-            if (i < 12) {
+            if (i < 9) {
 
                 $(nextQuestion).show();
                 setTimeout(function () {
@@ -263,15 +258,15 @@
                 }, 800);
             }
 
-            if (i == 12) {
+            if (i == 9) {
 
-                if (totalcount >= 8) {
+                if (totalcount >= 5) {
 
                     $('#result1').fadeIn();
                     //$('#finish1').fadeIn();
                     $('#helpBtn').fadeIn();
                 }
-                else if (totalcount < 4) {
+                else if (totalcount < 2) {
                     $('#result3').fadeIn();
 
                     $('#helpBtn').fadeIn();

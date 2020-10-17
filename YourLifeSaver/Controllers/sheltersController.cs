@@ -123,5 +123,11 @@ namespace YourLifeSaver.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Map()
+        {
+            return View();
+        }
+
     }
 }
