@@ -4,70 +4,105 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <section id="checklist" class="features section-bg">
-    <div class="sidebar-container" style="position:absolute">
-        <ul class="sidebar-navigation">
-            <li class="header" style="font-size:20px; padding-top:80px"><b>Support your freind</b></li>
-            <li>
-                <a href="~/quizs/ViolenceSign">
-                    Signs of family violence
-                </a>
-            </li>
-            <li><a href="~/quizs/Index"> Know their condition</a></li>
 
-            <li><a href="~/quizs/HelpSuggestion"> How I can help</a></li>
-            <li><a href="~/quizs/CheckList" style="color:#e65c37"> Check list</a></li>
-            <li><a href="~/quizs/SupportGroup">Support group</a></li>
-        </ul>
-    </div>
-
-    <div class="content-container">
-
-        <div class="container-fluid">
-
-            <!-- Main component for a primary marketing message or call to action -->
-            <div class="jumbotron" style="background:#ffffff">
-                <div class="container">
-                    <div class="section-title">
-                        <h2 data-aos="fade-in">Custom Checkbox </h2>
-                        <p data-aos="fade-in" class="aos-init aos-animate">Please make sure your friends go through this check list before they leave current environment.</p>
-
+    <!-- /main sidebar -->
+    <div id="sidebar-main" class="sidebar sidebar-default sidebar-separate sidebar-fixed">
+        <div class="sidebar-content">
+            <div class="sidebar-category sidebar-default">
+                <div class="sidebar-user">
+                    <div class="category-content">
+                        <h6 style="font-size:20px">Support your friend</h6>
                     </div>
-                    <div>
-                        <ul  style="font-size :20px">
-                            <li>
-                                <input id="box1" type="checkbox" />
-                                <label for="box1">Call the police</label>
-                            </li>
-                            <li>
-                                <input id="box2" type="checkbox" />
-                                <label for="box2">Bring your personal identification documents </label>
-                            </li>
-                            <li>
-                                <input id="box3" type="checkbox" />
-                                <label for="box3">Common Medicine</label>
-                            </li>
-                            <li>
-                                <input id="box4" type="checkbox" />
-                                <label for="box4">Contact close friend tell them where you go and your plan</label>
-                            </li>
-                            <li>
-                                <input id="box5" type="checkbox" />
-                                <label for="box5">Choose a closest hotel or to a friends house</label>
-                            </li>
-                            <li>
-                                <input id="box6" type="checkbox" />
-                                <label for="box6">Call Uber or use taxi/ If you have a car, drive safe  (share trip with your friend)</label>
-                            </li>
-                            <li>
-                                <input id="box7" type="checkbox" />
-                                <label for="box7">Walk out of your home</label>
-                            </li>
+                </div>
+            </div>
+            <!-- /Sidebar Category -->
+            <div class="sidebar-category sidebar-default">
+                <div class="category-content">
+                    <ul id="fruits-nav" class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="~/quizs/ViolenceSign" class="nav-link" style="font-size:15px">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                Signs of family violence
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/quizs/Index" class="nav-link" style="font-size:15px">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                Know their condition
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/quizs/HelpSuggestion" class="nav-link" style="font-size:15px">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                How I can help
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/quizs/CheckList" class="nav-link active" style="font-size:15px">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                checklist
+                            </a>
+                        </li>
 
-                        </ul>
-                    </div>
+                        <li class="nav-item">
+                            <a href="~/quizs/SupportGroup" class="nav-link" style="font-size:15px">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                Support group
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /Nav -->
+                    <!-- /Category Content -->
                 </div>
             </div>
 
         </div>
     </div>
+
+    <div class="content-wrapper">
+        <div class="row clearfix">
+            <div class="col-xs-12">
+                <div class="section-title">
+                    <p data-aos="fade-in" style="text-align:left"><a href="~/Home">Home</a>&nbsp>> Support your friend >> Checklist</p>
+                    <h2 data-aos="fade-in">Custom Checkbox </h2>
+                    <p data-aos="fade-in" class="aos-init aos-animate">Please make sure your friends go through this check list before they leave current environment.</p>
+
+                </div>
+                <div>
+                    <ul style="font-size :20px">
+                        <li>
+                            <input id="box1" type="checkbox" />
+                            <label for="box1">Call the police</label>
+                        </li>
+                        <li>
+                            <input id="box2" type="checkbox" />
+                            <label for="box2">Bring your personal identification documents </label>
+                        </li>
+                        <li>
+                            <input id="box3" type="checkbox" />
+                            <label for="box3">Common Medicine</label>
+                        </li>
+                        <li>
+                            <input id="box4" type="checkbox" />
+                            <label for="box4">Contact close friend tell them where you go and your plan</label>
+                        </li>
+                        <li>
+                            <input id="box5" type="checkbox" />
+                            <label for="box5">Choose a closest hotel or to a friends house</label>
+                        </li>
+                        <li>
+                            <input id="box6" type="checkbox" />
+                            <label for="box6">Call Uber or use taxi/ If you have a car, drive safe  (share trip with your friend)</label>
+                        </li>
+                        <li>
+                            <input id="box7" type="checkbox" />
+                            <label for="box7">Walk out of your home</label>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>

@@ -129,5 +129,10 @@ namespace YourLifeSaver.Controllers
             return View();
         }
 
+        public ActionResult newMap()
+        {
+            return View();
+        }
+
     }
 }

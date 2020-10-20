@@ -58,6 +58,19 @@ namespace YourLifeSaver.Controllers
         {
             return View();
         }
-      
+
+        public ActionResult FSupport1()
+        {
+            return View();
+        }
+        public ActionResult FSupport2()
+        {
+            return View();
+        }
+        public ActionResult FSupport3()
+        {
+            return View();
+        }
+
     }
 }

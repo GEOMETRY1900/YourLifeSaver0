@@ -13,18 +13,16 @@ namespace YourLifeSaver.Models
         public int ID { get; set; }
 
         [StringLength(500)]
-        public string s_Name { get; set; }
+        public string Name { get; set; }
 
         [StringLength(500)]
-        public string Address_2 { get; set; }
+        public string Address { get; set; }
 
         [StringLength(100)]
         public string Suburb { get; set; }
 
-        [StringLength(100)]
-        public string Longitude { get; set; }
+        public Decimal? Longitude { get; set; }
 
-        [StringLength(100)]
-        public string Latitude { get; set; }
+        public Decimal? Latitude { get; set; }
     }
 }

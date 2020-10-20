@@ -17,11 +17,11 @@ namespace YourLifeSaver.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<shelter>()
-                .Property(e => e.s_Name)
+                .Property(e => e.Name)
                 .IsUnicode(false);
 
             modelBuilder.Entity<shelter>()
-                .Property(e => e.Address_2)
+                .Property(e => e.Address)
                 .IsUnicode(false);
 
             modelBuilder.Entity<shelter>()
@@ -29,12 +29,10 @@ namespace YourLifeSaver.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<shelter>()
-                .Property(e => e.Longitude)
-                .IsUnicode(false);
+                .Property(e => e.Longitude);
 
             modelBuilder.Entity<shelter>()
-                .Property(e => e.Latitude)
-                .IsUnicode(false);
+                .Property(e => e.Latitude);
         }
     }
 }

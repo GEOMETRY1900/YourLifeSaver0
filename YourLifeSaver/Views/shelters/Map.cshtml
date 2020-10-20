@@ -5,10 +5,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<br />
-<br />
-<br />
-<br />
+<section class="features section-bg">
+    <div class="container">
+        <div class="section-title">
+
+            <p data-aos="fade-in" style="text-align:left"><a href="~/Home">Home</a>&nbsp >> Find a safe place</p>
+            <h2 data-aos="fade-in">
+                Find a emergency shelter
+            </h2>
+            <p>Please input the suburb name or suburb code of your friend's place in the search bar, to find the nearby shelters.</p>
+            <p>If you can not see the shelter, please refresh the page</p>
+        </div>
+
+    </div>
+</section>
 
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet"
@@ -18,7 +28,12 @@
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 <div id='map' style="height:600px;width:70%;margin:auto"></div>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css' rel='stylesheet' />
+
 <script>
+
 
     var transformRequest = (url, resourceType) => {
         var isMapboxRequest =
@@ -39,6 +54,54 @@
         zoom: 12,// starting zoom
         transformRequest: transformRequest
     });
+    var size = 80;
+
+    var pulsingDot = {
+        width: size,
+        height: size,
+        data: new Uint8Array(size * size * 4),
+
+        onAdd: function () {
+            var canvas = document.createElement('canvas');
+            canvas.width = this.width;
+            canvas.height = this.height;
+            this.context = canvas.getContext('2d');
+        },
+
+        render: function () {
+            var duration = 1000;
+            var t = (performance.now() % duration) / duration;
+
+            var radius = size / 2 * 0.3;
+            var outerRadius = size / 2 * 0.7 * t + radius;
+            var context = this.context;
+
+            // draw outer circle
+            context.clearRect(0, 0, this.width, this.height);
+            context.beginPath();
+            context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
+            context.fillStyle = 'rgba(255, 200, 200,' + (1 - t) + ')';
+            context.fill();
+
+            // draw inner circle
+            context.beginPath();
+            context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
+            context.fillStyle = 'rgba(255, 100, 100, 1)';
+            context.strokeStyle = 'white';
+            context.lineWidth = 2 + 4 * (1 - t);
+            context.fill();
+            context.stroke();
+
+            // update this image's data with data from the canvas
+            this.data = context.getImageData(0, 0, this.width, this.height).data;
+
+            // keep the map repainting
+            map.triggerRepaint();
+
+            // return `true` to let the map know that the image was updated
+            return true;
+        }
+    };
 
 
 
@@ -58,27 +121,26 @@
                 latfield: 'Latitude',
                 lonfield: 'Longitude',
                 delimiter: ','
-            }, function (err, data) {
+            }, function (err, data1) {
                 map.on('load', function () {
-
+                    map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 })
                     //Add the the layer to the map
                     map.addLayer({
-                        'id': 'csvData',
-                        'type': 'circle',
-                        'source': {
-                            'type': 'geojson',
-                            'data': data
+                        "id": "points",
+                        "type": "symbol",
+                        "source": {
+                            "type": "geojson",
+                            "data":data1
                         },
-                        'paint': {
-                            'circle-radius': 7,
-                            'circle-color': "purple"
+                        "layout": {
+                            "icon-image": "pulsing-dot"
                         }
                     });
 
 
                     // When a click event occurs on a feature in the csvData layer, open a popup at the
                     // location of the feature, with description HTML from its properties.
-                    map.on('click', 'csvData', function (e) {
+                    map.on('click', 'points', function (e) {
                         var coordinates = e.features[0].geometry.coordinates.slice();
 
                         //set popup text
@@ -111,7 +173,7 @@
                         map.getCanvas().style.cursor = '';
                     });
 
-                    var bbox = turf.bbox(data);
+                    var bbox = turf.bbox(data1);
                     map.fitBounds(bbox, { padding: 50 });
 
 
@@ -184,4 +246,5 @@
         border-bottom-color: rgb(61, 59, 59);
     }
 </style>
+
 
