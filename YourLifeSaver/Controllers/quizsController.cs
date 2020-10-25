@@ -165,7 +165,7 @@ namespace YourLifeSaver.Controllers
             return View();
         }
 
-        public ActionResult test()
+        public ActionResult newQuiz()
         {
             return View();
         }

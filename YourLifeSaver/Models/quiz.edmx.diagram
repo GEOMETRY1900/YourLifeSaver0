@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="b18ee97b65fe4ba2a7166e3d002ca6bf" Name="Diagram1" >
         <EntityTypeShape EntityType="quiz.quiz" Width="1.5" PointX="4.75" PointY="1.75" />
+        <EntityTypeShape EntityType="quiz.Shelter" Width="1.5" PointX="7.125" PointY="1.625" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

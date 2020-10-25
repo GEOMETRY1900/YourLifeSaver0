@@ -1,11 +1,12 @@
-﻿
-@{
-    ViewBag.Title = "CheckList";
+﻿@{
+    ViewBag.Title = "newQuiz";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<section id="checklist" class="features section-bg">
 
-    <!-- /main sidebar -->
+
+<!-- /main sidebar -->
+
+<section id="quiz" class="features section-bg">
     <div id="sidebar-main" class="sidebar sidebar-default sidebar-separate sidebar-fixed">
         <div class="sidebar-content">
             <div class="sidebar-category sidebar-default">
@@ -26,7 +27,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="~/quizs/newQuiz" class="nav-link" style="font-size:15px">
+                            <a href="~/quizs/newQuiz" class="nav-link active active" style="font-size:15px">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
                                 Know their condition
                             </a>
@@ -38,7 +39,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="~/quizs/CheckList" class="nav-link active" style="font-size:15px">
+                            <a href="~/quizs/CheckList" class="nav-link" style="font-size:15px">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
                                 checklist
                             </a>
@@ -63,49 +64,24 @@
         <div class="row clearfix">
             <div class="col-xs-12">
                 <div class="section-title">
-                    <p data-aos="fade-in" style="text-align:left"><a href="~/Home">Home</a>&nbsp>> Support your friend >> Checklist</p>
-                    <h2 data-aos="fade-in">CheckList </h2>
-                    <p data-aos="fade-in" class="aos-init aos-animate">
-                        If your friends have to leave home in an emergency. 
-                        Please make sure your friends go through this checklist before they leave the current environment to guarantee their safety.
-                    </p>
-
+                    <p data-aos="fade-in" style="text-align:left"><a href="~/Home">Home</a>&nbsp>> Support your friend >> Know their condition</p>
+                    <h2>How can I know</h2>
+                    <p> Choose the option below to let you know your friend's condition. We'll give you the result based on your choices. This quiz is based on Psych Central Research Team's research</p>
+                    <br />
+                    <a role="button" class="btn btn-primary btn-lg" href="~/quizs/HelpSuggestion">Find some suggestions</a>
+                    <a role="button" class="btn btn-primary btn-lg" href="~/quizs/SupportGroup" style="margin-left:30px">More support groups</a>
                 </div>
-                <div>
-                    <ul style="font-size :20px">
-                        <li>
-                            <input id="box1" type="checkbox" />
-                            <label for="box1">Call the police</label>
-                        </li>
-                        <li>
-                            <input id="box2" type="checkbox" />
-                            <label for="box2">Bring your personal identification documents </label>
-                        </li>
-                        <li>
-                            <input id="box3" type="checkbox" />
-                            <label for="box3">Common Medicine</label>
-                        </li>
-                        <li>
-                            <input id="box4" type="checkbox" />
-                            <label for="box4">Contact close friend tell them where you go and your plan</label>
-                        </li>
-                        <li>
-                            <input id="box5" type="checkbox" />
-                            <label for="box5">Choose a closest hotel or to a friends house</label>
-                        </li>
-                        <li>
-                            <input id="box6" type="checkbox" />
-                            <label for="box6">Call Uber or use taxi/ If you have a car, drive safe  (share trip with your friend)</label>
-                        </li>
-                        <li>
-                            <input id="box7" type="checkbox" />
-                            <label for="box7">Walk out of your home</label>
-                        </li>
 
-                    </ul>
+
+
+                <div style="display:table; margin:0 auto;">
+                    <div id="interact-5f93ffce1c043a00147c5f44"></div>
+                    <script type="text/javascript">var app_5f93ffce1c043a00147c5f44; (function (d, t) { var s = d.createElement(t), options = { "appId": "5f93ffce1c043a00147c5f44", "width": "800", "height": "800", "async": true, "host": "quiz.tryinteract.com", "auto_resize": false, "footer": "show" }; s.src = 'https://i.tryinteract.com/embed/app.js'; s.onload = s.onreadystatechange = function () { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { app_5f93ffce1c043a00147c5f44 = new InteractApp(); app_5f93ffce1c043a00147c5f44.initialize(options); app_5f93ffce1c043a00147c5f44.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script');</script>
                 </div>
+
+
+
             </div>
         </div>
     </div>
-
 </section>

@@ -321,10 +321,10 @@
     <Content Include="assets\img\info\3.2.jpg" />
     <Content Include="assets\img\info\4.1.jpg" />
     <Content Include="assets\img\info\4.2.jpg" />
+    <Content Include="assets\img\Logo.png" />
     <Content Include="assets\img\marker.png" />
     <Content Include="assets\img\next.png" />
     <Content Include="assets\img\background.jpg" />
-    <Content Include="assets\img\Logo.png" />
     <Content Include="assets\img\services-2.jpg" />
     <Content Include="assets\img\services-1.jpg" />
     <Content Include="assets\img\services-3.jpg" />
@@ -813,7 +813,7 @@
     <Content Include="Views\Home\FSupport1.cshtml" />
     <Content Include="Views\Home\FSupport2.cshtml" />
     <Content Include="Views\Home\FSupport3.cshtml" />
-    <Content Include="Views\quizs\test.cshtml" />
+    <Content Include="Views\quizs\newQuiz.cshtml" />
     <Content Include="Views\shelters\newMap.cshtml" />
   </ItemGroup>
   <ItemGroup />
