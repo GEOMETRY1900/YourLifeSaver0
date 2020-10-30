@@ -117,11 +117,11 @@
                 <ul>
                     <li @*class="active"*@><a href="~/Home#intro">Home</a></li>
                     <li class="drop-down">
-                        <a href="~/Home/RaiseAwarness">Raise Awareness<i class="bx bx-chevron-down"></i></a>
+                        <a href="~/Home/RaiseAwarness">Raise awareness<i class="bx bx-chevron-down"></i></a>
                         <ul>
-                            <li>@Html.ActionLink("Know Violence", "Information1", "Home")</li>
+                            <li>@Html.ActionLink("Know the family violence", "Information1", "Home")</li>
                             <li>@Html.ActionLink("Effects of family violence on children", "Information2", "Home")</li>
-                            <li>@Html.ActionLink("Why is elder woman risky", "Information3", "Home")</li>
+                            <li>@Html.ActionLink("Why are elderly women at risk", "Information3", "Home")</li>
                             <li>@Html.ActionLink("Let us help", "Information4", "Home")</li>
                         </ul>
                     </li>
@@ -137,7 +137,7 @@
 
                         </ul>
                     </li>
-                    <li><a href="~/shelters/Map">Find a safe place</a></li>
+                    <li><a href="~/shelters/newMap">Find a safe place</a></li>
                     <li class="drop-down"><a href="~/Home/FSupport1">Further support <i class="bx bx-chevron-down"></i></a>
                         <ul>
                             <li><a href="~/Home/FSupport1">  Intervention Order</a></li>
@@ -187,7 +187,7 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member" data-aos="fade-up">
-                        <div class="pic"><a href="~/Home/RaiseAwarness"><img src="~/assets/img/navicon1.png" alt="information1"></a></div>
+                        <div class="pic" ><a href="~/Home/RaiseAwarness"><img src="~/assets/img/navicon1.png" alt="information1"></a></div>
                         <h4>Raise Awareness </h4>
                         <span>Why is it important to support people suffering family violence? What you need to know?</span>
                     </div>
@@ -205,7 +205,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member" data-aos="fade-up" data-aos-delay="200">
-                        <div class="pic"><a href="~/shelters/Map"><img src="~/assets/img/navicon3.png" alt="information3"></a></div>
+                        <div class="pic"><a href="~/shelters/newMap"><img src="~/assets/img/navicon3.png" alt="information3"></a></div>
                         <h4>Find a safe place</h4>
                         <span>Using the shelter searching function in our website to find your friends/ family a safe shelter.</span>
                     </div>
@@ -220,6 +220,20 @@
                 </div>
             </div>
 
+            <style>
+                .pic {
+                    overflow: hidden;
+                }
+
+                    .pic img {
+                        cursor: pointer;
+                        transition: all 0.6s;
+                    }
+
+                        .pic img:hover {
+                            transform: scale(1.2);
+                        }
+            </style>
         </div>
     </section>
     <!-- End Team Section -->
@@ -233,7 +247,7 @@
                 <div class="row  justify-content-center">
                     <div class="col-lg-6">
                         <h3>Friend Life Saver</h3>
-                        <p>Prevent violence, support your friend, save your family.</p>
+                        <p>Prevent violence, support your friend.</p>
                     </div>
                 </div>
 

@@ -283,7 +283,6 @@
     <Content Include="App_Data\webquizdb_log.ldf">
       <DependentUpon>webquizdb.mdf</DependentUpon>
     </Content>
-    <Content Include="assets\css\mapbox-gl.css" />
     <Content Include="assets\css\quiz.css" />
     <Content Include="assets\css\sidebar.css" />
     <Content Include="assets\css\style.css" />
@@ -322,6 +321,7 @@
     <Content Include="assets\img\info\4.1.jpg" />
     <Content Include="assets\img\info\4.2.jpg" />
     <Content Include="assets\img\Logo.png" />
+    <Content Include="assets\img\Map\marker.png" />
     <Content Include="assets\img\marker.png" />
     <Content Include="assets\img\next.png" />
     <Content Include="assets\img\background.jpg" />
